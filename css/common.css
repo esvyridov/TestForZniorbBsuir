@@ -1,0 +1,34 @@
+p {
+	cursor: pointer;
+	transition: all .3s;
+	padding: 10px 0;
+}
+span {
+	background: lightgray;
+}
+p:hover{
+	background: lightgray;
+}
+.green{
+	background: #4c812b !important;
+}
+.red{
+	background: #ec979c !important;
+}
+input{
+	width:100%;
+	height: 30px;
+	font-size: 20px;
+	padding: 20px 15px;
+	box-sizing:border-box; 
+    -moz-box-sizing:border-box; 
+    -webkit-box-sizing:border-box; 
+    -ms-box-sizing:border-box;
+}
+
+
+img {
+	display: block;
+	text-align: center;
+	margin: 0 auto;
+}

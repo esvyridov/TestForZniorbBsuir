@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" ng-app = "phonecatApp">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="css/common.css">
+
+</head>
+<body >
+<div ng-controller = "PhoneListCtrl">
+	<input ng-model="query" placeholder="Поиск...">
+	<ul>
+		<li ng-repeat = "question in questions | filter:{question:query}">
+			<span> {{question.question}} </span>
+			<p ng-if="question.right.indexOf(1) != -1" class="right">{{question.answer1}}</p>
+			<p ng-if="question.right.indexOf(1) == -1">{{question.answer1}}</p>
+			<p ng-if="question.right.indexOf(2) != -1" class="right">{{question.answer2}}</p>
+			<p ng-if="question.right.indexOf(2) == -1">{{question.answer2}}</p>
+			<p ng-if="question.right.indexOf(3) != -1" class="right">{{question.answer3}}</p>
+			<p ng-if="question.right.indexOf(3) == -1">{{question.answer3}}</p>
+			<p ng-if="question.right.indexOf(4) != -1" class="right">{{question.answer4}}</p>
+			<p ng-if="question.right.indexOf(4) == -1">{{question.answer4}}</p>
+		</li>
+	</ul>
+	<img src="img/1458816902139819516.jpg">
+</div>
+
+	
+</div>
+</body>
+	<script type="text/javascript" src="js/angular.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script type="text/javascript" src="js/common.js"></script>
+</html>
